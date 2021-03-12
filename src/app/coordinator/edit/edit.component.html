@@ -1,0 +1,28 @@
+<body>
+    <h3>Co-Ordinator Priviledge Edit</h3>
+
+    <div class="container">
+        <form>
+            <label for="co_id">Co-Ordinator ID</label>
+            <input type="text" id="co_id" name="co_id"><!-- make it disabled -->
+
+            <!-- auto populate below fields using data from backend and interpolation concept -->
+            <label for="co_name">Co-Ordinator Name</label>
+            <input type="text" id="co_name" name="co_name">
+            <!-- read from backend and only show the subjects already taken by co-ordinator boxes should be ticked from before -->
+            <!-- <input type="checkbox" [checked]="item.check == 'true'"> use this logic-->
+            <fieldset>
+                <legend>Already Has Priviledge For:</legend>
+                    <input type="checkbox" id="subject1" name="" value="">
+                    <label for="subject1"> Subject Name</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Asking Priviledge For:</legend>
+                    <input type="checkbox" id="subject1" name="" value="">
+                    <label for="subject1"> Subject Name</label><br>
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
